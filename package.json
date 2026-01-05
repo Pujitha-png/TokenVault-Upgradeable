@@ -1,0 +1,26 @@
+{
+  "name": "token-vault-upgradeable",
+  "version": "1.0.0",
+  "description": "Production-grade upgradeable smart contract system implementing TokenVault protocol",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy-v1": "hardhat run scripts/deploy-v1.js",
+    "upgrade-v2": "hardhat run scripts/upgrade-to-v2.js",
+    "upgrade-v3": "hardhat run scripts/upgrade-to-v3.js"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "@openzeppelin/contracts-upgradeable": "^5.0.0",
+    "@openzeppelin/hardhat-upgrades": "^2.0.0",
+    "hardhat": "^2.19.0",
+    "ethers": "^6.0.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "chai": "^4.3.0",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.0"
+  }
+}
